@@ -5,22 +5,31 @@ import { HeartFilledIcon } from "@radix-ui/react-icons";
 
 export function HeroSection() {
   return (
-    <section className="flex flex-col lg:gap-0 gap-8 text-center md:text-left lg:flex-row items-center justify-center w-full mx-auto max-w-6xl min-h-[calc(100svh-(16px*4))] md:min-h-[80svh] md:px-10">
+    <section className="mx-auto flex min-h-[calc(100svh-(16px*4))] w-full max-w-6xl flex-col items-center justify-center gap-8 text-center md:min-h-[80svh] md:px-10 md:text-left lg:flex-row lg:gap-0">
       <div className="lg:flex-1">
-        <h1 className="md:p-0 p-4 font-semibold text-4xl md:text-5xl lg:text-6xl max-w-xs md:max-w-xl mb-6 md:mt-10 lg:mt-0">
-          Doe, O <span className="text-rose-500">Rio Grande do Sul </span>{" "}
+        <h1 className="max-w-xs p-4 text-3xl font-semibold md:mt-10 md:max-w-xl md:p-0 md:text-4xl lg:mt-0 lg:text-5xl">
+          Doe, O <span className="text-emerald-500">Rio Grande do Sul </span>{" "}
           Precisa de Você!
         </h1>
-        <Button className="rounded-full bg-rose-500 hover:bg-rose-500 md:text-md md:px-7 md:py-5 lg:text-lg lg:px-8 lg:py-6 hover:scale-[1.01] active:scale-[0.99]">
+
+        <p className="my-2 max-w-xs p-4 text-sm text-zinc-500 md:my-6 md:max-w-xl md:p-0 lg:text-base">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          quisquam minima sed deserunt optio impedit.
+        </p>
+
+        <Button className="md:text-md rounded-full  bg-emerald-500 hover:scale-[1.01] hover:bg-emerald-500 active:scale-[0.99] md:px-7 md:py-5 lg:px-8 lg:py-6 lg:text-lg">
           Quero Ajudar
           <HeartFilledIcon className="ml-2 scale-110" />
         </Button>
       </div>
-      <Image
-        src={hero_image}
-        alt="Pessoas doando"
-        className="lg:flex-1 max-w-sm md:max-w-lg lg:max-w-xl w-full"
-      />
+
+      <div className="flex w-full items-center justify-center lg:flex-1">
+        <Image
+          src={hero_image}
+          alt="Pessoas doando"
+          className="w-full max-w-sm lg:max-w-xl"
+        />
+      </div>
     </section>
   );
 }
