@@ -1,12 +1,15 @@
 import { HeroSection } from "@/components/hero-section";
-import { LinkHub } from "@/components/linkhub";
+import { Collections } from "@/components/collections";
+import { News } from "@/components/news";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
 
-      <LinkHub />
+      <Collections />
+
+      <News />
     </>
   );
 }

@@ -2,6 +2,8 @@ import Image from "next/image";
 import hero_image from "../../public/hero-section.svg";
 import { Button } from "./ui/button";
 import { HeartFilledIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
+import { estado_rs_gov } from "@/app/layout";
 
 export function HeroSection() {
   return (
@@ -13,14 +15,16 @@ export function HeroSection() {
         </h1>
 
         <p className="my-2 max-w-xs p-4 text-sm text-zinc-500 md:my-6 md:max-w-xl md:p-0 lg:text-base">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-          quisquam minima sed deserunt optio impedit.
+          Você quer participar das doações e não sabe como? Estamos aqui para te
+          ajudar a ajudar!
         </p>
 
-        <Button className="md:text-md rounded-full  bg-emerald-500 hover:scale-[1.01] hover:bg-emerald-500 active:scale-[0.99] md:px-7 md:py-5 lg:px-8 lg:py-6 lg:text-lg">
-          Quero Ajudar
-          <HeartFilledIcon className="ml-2 scale-110" />
-        </Button>
+        <Link target="_blank" href={estado_rs_gov}>
+          <Button className="md:text-md rounded-full  bg-emerald-500 hover:scale-[1.01] hover:bg-emerald-500 active:scale-[0.99] md:px-7 md:py-5 lg:px-8 lg:py-6 lg:text-lg">
+            Quero Doar
+            <HeartFilledIcon className="ml-2 scale-110" />
+          </Button>
+        </Link>
       </div>
 
       <div className="flex w-full items-center justify-center lg:flex-1">
