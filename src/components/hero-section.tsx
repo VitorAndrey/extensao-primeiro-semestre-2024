@@ -3,7 +3,9 @@ import hero_image from "../../public/hero-section.svg";
 import { Button } from "./ui/button";
 import { HeartFilledIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
-import { estado_rs_gov } from "@/app/layout";
+
+export const estado_rs_gov =
+  "https://www.estado.rs.gov.br/governo-reativa-canal-de-doacoes-via-pix-para-auxilio-as-vitimas-das-enchentes";
 
 export function HeroSection() {
   return (

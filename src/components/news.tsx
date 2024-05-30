@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { info_news } from "@/app/layout";
+
+export const info_news =
+  "https://www.cnnbrasil.com.br/nacional/quase-75-da-populacao-do-rio-grande-do-sul-foi-afetada-por-enchentes-diz-atlas-cnn/#:~:text=00%201.0x-,Quase%2075%25%20da%20popula%C3%A7%C3%A3o%20do%20Rio%20Grande%20do%20Sul%20foi,quinta%2Dfeira%20(23).";
 
 export function News() {
   return (
@@ -12,7 +14,7 @@ export function News() {
         Por Que Doar? A Crise Não Acabou! – Confira a Real Situação do Rio do
         Grande do Sul
       </h2>
-      <div className="aspect-w-16 aspect-h-9">
+      <div className="aspect-h-9 aspect-w-16">
         <iframe
           src="https://www.youtube.com/embed/CFmZdVgXqXw?si=WlkC6sR8l-XjV9aB"
           frameBorder="0"

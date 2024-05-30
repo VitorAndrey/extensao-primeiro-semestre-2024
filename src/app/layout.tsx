@@ -7,15 +7,6 @@ import { Footer } from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const estado_rs_gov =
-  "https://www.estado.rs.gov.br/governo-reativa-canal-de-doacoes-via-pix-para-auxilio-as-vitimas-das-enchentes";
-
-export const donations_news =
-  "https://www.cnnbrasil.com.br/nacional/defesa-civil-divulga-relatorio-de-doacoes-ao-rs-veja-a-lista/";
-
-export const info_news =
-  "https://www.cnnbrasil.com.br/nacional/quase-75-da-populacao-do-rio-grande-do-sul-foi-afetada-por-enchentes-diz-atlas-cnn/#:~:text=00%201.0x-,Quase%2075%25%20da%20popula%C3%A7%C3%A3o%20do%20Rio%20Grande%20do%20Sul%20foi,quinta%2Dfeira%20(23).";
-
 export const metadata: Metadata = {
   title: "Ajude RS",
   description:

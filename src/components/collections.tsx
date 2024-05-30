@@ -11,7 +11,9 @@ import {
 } from "lucide-react";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { donations_news } from "@/app/layout";
+
+const donations_news =
+  "https://www.cnnbrasil.com.br/nacional/defesa-civil-divulga-relatorio-de-doacoes-ao-rs-veja-a-lista/";
 
 export function Collections() {
   return (
@@ -28,8 +30,8 @@ export function Collections() {
         municípios atingidos. Confira na lista abaixo os itens mais doados e
         distribuídos pela Defesa Civil aos municípios atingidos:
       </p>
-      <div className="child:flex-1 mb-6 flex w-full flex-col items-center justify-center gap-4 p-4 lg:flex-row lg:items-start lg:gap-0 lg:p-8">
-        <ul className="child:flex child:items-center child:gap-2 flex flex-col gap-4">
+      <div className="mb-6 flex w-full flex-col items-center justify-center gap-4 p-4 child:flex-1 lg:flex-row lg:items-start lg:gap-0 lg:p-8">
+        <ul className="flex flex-col gap-4 child:flex child:items-center child:gap-2">
           <li>
             <DropletIcon color="#10b981" size={20} /> Água: 1.538.133 Litros
           </li>
@@ -47,7 +49,7 @@ export function Collections() {
             <BabyIcon color="#10b981" size={20} /> Fraldas: 40.183
           </li>
         </ul>
-        <ul className="child:flex child:items-center child:gap-2 flex flex-col gap-4">
+        <ul className="flex flex-col gap-4 child:flex child:items-center child:gap-2">
           <li>
             <MilkIcon color="#10b981" size={20} /> Materiais de Higiene e
             Limpeza: 138.515 itens
