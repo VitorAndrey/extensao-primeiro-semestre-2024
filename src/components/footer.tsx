@@ -1,8 +1,8 @@
 export function Footer() {
   return (
-    <footer className="mt-20 flex min-h-12 items-center justify-center bg-emerald-500 p-4 text-center text-white">
+    <footer className="mt-20 flex min-h-12 items-center justify-center bg-blue-500 p-4 text-center text-white">
       <p>
-        &copy; 2024 Blissfeed. Todos os direitos reservados.{" "}
+        &copy; 2024. Todos os direitos reservados.{" "}
         <a href="" className="underline">
           Política de Privacidade
         </a>{" "}

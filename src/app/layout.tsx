@@ -8,9 +8,9 @@ import { Footer } from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ajude RS",
+  title: "Ajude a Ucrânia",
   description:
-    "Você quer doar para o Rio Grande do sul e não sabe como? Estamos aqui para te ajudar a ajudar!",
+    "Quer ajudar pessoas afetadas pela guerra na Ucrânia e não sabe como? Estamos aqui para te guiar nessa missão solidária!",
   icons: {
     icon: "/favicon.png",
   },

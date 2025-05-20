@@ -12,8 +12,10 @@ import {
 import { Button } from "./ui/button";
 import Link from "next/link";
 
+const color = "blue";
+
 const donations_news =
-  "https://www.cnnbrasil.com.br/nacional/defesa-civil-divulga-relatorio-de-doacoes-ao-rs-veja-a-lista/";
+  "https://www.unicef.org/ukraine/en/winterization-assistance-2024-2025";
 
 export function Collections() {
   return (
@@ -22,54 +24,60 @@ export function Collections() {
       className="mx-auto flex min-h-[calc(100svh-(16px*4))] w-full max-w-6xl flex-col items-center justify-center px-2 py-10"
     >
       <h2 className="px-4 text-center text-2xl font-semibold lg:text-3xl">
-        Doações recebidas
+        Apoio Humanitário na Ucrânia
       </h2>
-      <p className=" max-w-3xl self-center px-4 py-6 text-center  text-zinc-500">
-        Nesta sexta-feira (24/05/2024), a Defesa Civil do estado divulgou um
-        relatório sobre as doações recebidas e encaminhadas pelo órgão a 165
-        municípios atingidos. Confira na lista abaixo os itens mais doados e
-        distribuídos pela Defesa Civil aos municípios atingidos:
+      <p className="max-w-3xl self-center px-4 py-6 text-center text-zinc-500">
+        Com a intensificação do conflito e a chegada do inverno rigoroso,
+        milhões de ucranianos enfrentam desafios extremos. Organizações como a
+        UNICEF e parceiros internacionais têm mobilizado recursos para fornecer
+        assistência vital. Abaixo, destacamos alguns dos principais esforços
+        realizados até o final de 2024:
       </p>
       <div className="mb-6 flex w-full flex-col items-center justify-center gap-4 p-4 child:flex-1 lg:flex-row lg:items-start lg:gap-0 lg:p-8">
         <ul className="flex flex-col gap-4 child:flex child:items-center child:gap-2">
           <li>
-            <DropletIcon color="#10b981" size={20} /> Água: 1.538.133 Litros
+            <DropletIcon color={color} size={20} /> Acesso à água potável para
+            5,8 milhões de pessoas
           </li>
           <li>
-            <AppleIcon color="#10b981" size={20} /> Alimentos: 355,97 toneladas
+            <AppleIcon color={color} size={20} /> Distribuição de alimentos e
+            assistência nutricional para famílias vulneráveis
           </li>
           <li>
-            <BedSingleIcon color="#10b981" size={20} /> Cobertores e roupas de
-            cama: 115.670 itens
+            <BedSingleIcon color={color} size={20} /> Entrega de cobertores e
+            roupas de cama para 50.000 famílias
           </li>
           <li>
-            <BedIcon color="#10b981" size={20} /> Colchões: 21.458 unidades
+            <BedIcon color={color} size={20} /> Fornecimento de combustível
+            sólido para aquecimento doméstico
           </li>
           <li>
-            <BabyIcon color="#10b981" size={20} /> Fraldas: 40.183
+            <BabyIcon color={color} size={20} /> Apoio a 79.000 crianças com
+            assistência financeira e suprimentos essenciais
           </li>
         </ul>
         <ul className="flex flex-col gap-4 child:flex child:items-center child:gap-2">
           <li>
-            <MilkIcon color="#10b981" size={20} /> Materiais de Higiene e
-            Limpeza: 138.515 itens
+            <MilkIcon color={color} size={20} /> Distribuição de kits de higiene
+            para famílias deslocadas
           </li>
           <li>
-            <ShowerHeadIcon color="#10b981" size={20} /> Materiais de Higiene
-            Pessoal: 240.939 kits
+            <ShowerHeadIcon color={color} size={20} /> Reabilitação de sistemas
+            de saneamento e fornecimento de kits de higiene pessoal
           </li>
           <li>
-            <PawPrintIcon color="#10b981" size={20} /> Ração animal: 61.908
-            sacos
+            <PawPrintIcon color={color} size={20} /> Assistência a abrigos e
+            cuidados para animais de estimação afetados
           </li>
           <li>
-            <ShirtIcon color="#10b981" size={20} /> Roupas: 363.863 kits
+            <ShirtIcon color={color} size={20} /> Fornecimento de roupas de
+            inverno para crianças em idade escolar
           </li>
         </ul>
       </div>
 
       <Link href={donations_news} target="_blank">
-        <Button className="self-center rounded-full border-2 border-emerald-500 bg-transparent font-semibold text-emerald-500 transition-all duration-300  hover:bg-emerald-500 hover:text-white">
+        <Button className="self-center rounded-full border-2 border-blue-500 bg-transparent font-semibold text-blue-500 transition-all duration-300 hover:bg-blue-500 hover:text-white">
           Saiba Mais!
         </Button>
       </Link>
